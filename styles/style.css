@@ -16,6 +16,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
 }
 
 h1,
@@ -60,13 +61,10 @@ ol {
   background-color: #d9d9d9;
 }
 
-.page {
-  padding: 133px 30px; /*под вопросом, добавила самостоятельно*/
-}
-
 .content {
   display: grid;
-
+  justify-self: center;
+  align-self: center;
   grid-template-columns: 711px 399px;
   justify-content: center;
   align-items: end;
@@ -77,10 +75,6 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-}
-
-.title {
-  margin-bottom: 20px;
 }
 
 .content-details {
@@ -98,10 +92,12 @@ ol {
 .content__list-container {
   height: 298px;
   overflow-y: scroll;
+  position: relative;
 }
 
 .result__video-container {
   display: block;
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
@@ -150,6 +146,7 @@ ol {
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -338,12 +335,4 @@ ol {
 
 .content__list-item_current {
   background-color: #545050;
-}
-
-.result__video-container {
-  position: relative;
-}
-
-.content__list-container {
-  position: relative;
 }
