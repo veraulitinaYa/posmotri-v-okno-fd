@@ -259,7 +259,6 @@ ol {
 }
 
 .search-form__label:has(:active) .search-form__pseudo-checkbox::after {
-  text-decoration: none;
   content: "";
   display: block;
   width: 15px;
